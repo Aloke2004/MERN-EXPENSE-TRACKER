@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useUserAuth } from "../../hooks/useUserAuth";
 import DashboardLayout from "../../components/layouts/DashboardLayout";
 import { toast } from "react-hot-toast";
 import { API_PATHS } from "../../utils/apiPaths";
@@ -9,6 +8,7 @@ import AddExpenseForm from "../../components/Expense/AddExpenseForm";
 import Modal from "../../components/Modal";
 import ExpenseList from "../../components/Expense/ExpenseList";
 import DeleteAlert from "../../components/DeleteAlert";
+import { useUserAuth } from "../../hooks/UseUserAuth";
 
 const Expense = () => {
   useUserAuth();
